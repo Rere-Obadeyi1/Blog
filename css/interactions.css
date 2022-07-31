@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: teal;
+}
+.side-bar{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+.side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+}
+.side-bar .menu .item{
+    position: relative;
+    cursor: pointer;
+}
+.side-bar .menu .item a{
+    color: #fff;
+    background: grey;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+}
+.side-bar .menu .item a:hover{
+    background: rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+    margin-right: 15px;
+}
+.side-bar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
